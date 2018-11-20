@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".course.add.AddCourseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etNameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/edit_text_back"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etFallWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etFall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fall"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:inputType="number"
+                android:background="@drawable/edit_text_back"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etCreditWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/container"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/number_of_credits"
+                android:background="@drawable/edit_text_back"
+                android:inputType="number"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etDescriptionWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/container"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/short_description"
+                android:lines="3"
+                android:background="@drawable/edit_text_back"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bnInsert"
+        android:onClick="onClickInsert"
+        app:fab_colorNormal="@color/colorPrimaryDark"
+        app:fab_colorPressed="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_icon="@drawable/icons8_checkmark_24"
+        android:layout_margin="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

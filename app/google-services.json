@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1001657735637",
+    "firebase_url": "https://intranet-dbc4a.firebaseio.com",
+    "project_id": "intranet-dbc4a",
+    "storage_bucket": "intranet-dbc4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001657735637:android:036301ecd470826f",
+        "android_client_info": {
+          "package_name": "com.example.miras.kbtuintranet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001657735637-h8i1erddq7j4lnq6m12ggn7amooahi8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miras.kbtuintranet",
+            "certificate_hash": "594b2289d0a9556047c6c1bd07324b67daf76cdf"
+          }
+        },
+        {
+          "client_id": "1001657735637-h6gdmfrfrk82f8stq3hmlo6ec78q61g8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miras.kbtuintranet",
+            "certificate_hash": "c0a50f29886c7a8f297d1c286f6460390415aa00"
+          }
+        },
+        {
+          "client_id": "1001657735637-62abjlipv9vk2v46tiul44hm2uq6ul5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZbtd7IQbljqbA4VF4dzDJ5TSfvU8kYw0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001657735637-62abjlipv9vk2v46tiul44hm2uq6ul5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

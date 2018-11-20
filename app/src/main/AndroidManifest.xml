@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.miras.kbtuintranet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.miras.kbtuintranet.item.add.AddItemActivity" />
+        <activity android:name="com.example.miras.kbtuintranet.profile.ProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miras.kbtuintranet.MainActivity" />
+        </activity>
+        <activity android:name="com.example.miras.kbtuintranet.auth.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.example.miras.kbtuintranet.auth.register.SignupActivity" />
+
+        <activity android:name="com.example.miras.kbtuintranet.course.list.CoursesListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miras.kbtuintranet.MainActivity" />
+        </activity>
+
+        <activity android:name="com.example.miras.kbtuintranet.course.details.CourseDetailsActivity" />
+        <activity android:name="com.example.miras.kbtuintranet.course.add.AddCourseActivity" />
+        <activity android:name="com.example.miras.kbtuintranet.item.details.TeacherDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miras.kbtuintranet.MainActivity" />
+        </activity>
+
+
+        <activity android:name="com.example.miras.kbtuintranet.item.details.StudentDetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miras.kbtuintranet.MainActivity" />
+        </activity>
+        <activity android:name="com.example.miras.kbtuintranet.item.my_list.MyStudentsActivity" />
+        <activity android:name="com.example.miras.kbtuintranet.mark.my_list.MyMarksActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.miras.kbtuintranet.profile.ProfileActivity" />
+        </activity>
+        <activity
+            android:name="com.example.miras.kbtuintranet.MainActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

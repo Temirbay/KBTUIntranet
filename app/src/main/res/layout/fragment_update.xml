@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/studentForm"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="350dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etNameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/edit_text_back"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etSurnameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/surname"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/edit_text_back"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etYearWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/container"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/year"
+                android:background="@drawable/edit_text_back"
+                android:inputType="number"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teacherForm"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:visibility="gone"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etTeacherNameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etNameTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_back"
+                android:hint="@string/name"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etTeacherSurnameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/container"
+            android:textColorHint="@color/colorTextLight">
+
+            <EditText
+                android:id="@+id/etSurnameTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_back"
+                android:hint="@string/surname"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bnUpdate"
+        app:fab_colorNormal="@color/colorPrimaryDark"
+        app:fab_colorPressed="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_icon="@drawable/icons8_checkmark_24"
+        android:layout_margin="8dp"/>
+</RelativeLayout>
